@@ -1,0 +1,18 @@
+--------- beginning of /dev/log/main
+--------- beginning of /dev/log/system
+I/MainActivity( 8271): onCreate event fired
+I/MainActivity( 8271): onStart event fired
+I/MainActivity( 8271): onResume event fired
+I/MainActivity( 8271): onPause event fired
+I/MainActivity( 8271): onStop event fired
+I/MainActivity( 8271): onRestart event fired
+I/MainActivity( 8271): onStart event fired
+I/MainActivity( 8271): onResume event fired
+I/MainActivity( 8271): onPause event fired
+I/MainActivity( 8271): onStop event fired
+I/MainActivity( 8271): onRestart event fired
+I/MainActivity( 8271): onStart event fired
+I/MainActivity( 8271): onResume event fired
+I/MainActivity( 8271): onPause event fired
+I/MainActivity( 8271): onStop event fired
+E/MainActivity( 8271): We're going down, Captain!

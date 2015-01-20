@@ -15,7 +15,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.i(TAG, "onCreate event fired");
+        logEvent("onCreate");
         if (savedInstanceState != null) {
             for (String item : savedInstanceState.keySet()) {
                 Log.i(TAG, item + ": " + savedInstanceState.get(item));
@@ -26,31 +26,31 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public void onPause() {
         super.onPause();
-        Log.i(TAG, "onPause event fired");
+        logEvent("onPause");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.i(TAG, "onStop event fired");
+        logEvent("onStop");
     }
 
     @Override
     public void onResume() {
         super.onResume();
-        Log.i(TAG, "onResume event fired");
+        logEvent("onResume");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Log.i(TAG, "onStart event fired");
+        logEvent("onStart");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.i(TAG, "onRestart event fired");
+        logEvent("onRestart");
     }
 
     @Override
@@ -79,6 +79,11 @@ public class MainActivity extends ActionBarActivity {
     public void onDestroy() {
         super.onDestroy();
         Log.e(TAG, "We're going down, Captain!");
+
+    }
+
+    private void logEvent(String eventName){
+        Log.e(TAG, eventName + " event fired");
 
     }
 }
